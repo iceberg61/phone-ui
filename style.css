@@ -1,0 +1,149 @@
+:root {
+    --light-blue: rgb(95, 156, 235);
+    --black: rgb(10, 6, 6);
+    --dark-grey: rgb(51, 50, 50);
+    --light-grey: rgb(211, 211, 211);
+    --white: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* filter: brightness(20%); */
+    font-family: monospace;
+    /* filter: brightness(20%);
+    filter: brightness(20%); */
+    min-height: 100vh;
+    /* background-position: center;
+    background-size: 34.4rem;
+    background-repeat: no-repeat; */
+    /* background-color: aqua; */
+    color: var(--white);
+    /* margin: 0 .5rem; */
+}
+
+.phone {
+    min-height: 100vh;
+    background-image: url(./tanjiro.jpg) ;
+    background-position: center;
+    background-size: 34.4rem;
+    background-repeat: no-repeat;
+    /* filter: brightness(20%); */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.nav {
+    padding-inline: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div {
+    background-color: var(--black);
+    width: 100%;
+    visibility: hidden;
+    height: 300px;
+    z-index: 3;
+    position: fixed;
+    border-radius: 0 0 10px 10px;
+    padding: .5rem 1rem;
+}
+
+.active {
+    visibility: visible;
+
+    transition: transform 350ms ease-out;
+}
+
+.div .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div .button {
+    border: none;
+    background-color: var(--dark-grey);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.div .button i {color: var(--light-grey);}
+
+.div .button:hover {background-color: var(--light-blue);}
+
+.div .button i:hover {color: var(--black);}
+
+.span {font-size: .5rem;}
+
+.right-nav img {height: 10px;}
+
+.time {
+    position: relative;
+    margin-block: 10rem 1rem;
+    z-index: 2;
+    text-align: center;
+}
+
+.time span {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.time p {font-size: .6rem;}
+
+input[type="range"] {
+    width: 100%;
+    height: .2rem;
+    background-color: var(--light-blue);
+    /* -webkit-appearance: none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    width: 15px;
+    height: 15px;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    /* background-color: var(--light-blue); */
+
+}
+
+.options {
+    margin: 1rem;
+    text-align: center;
+}
+/* .music-panel {
+    height: 5rem;
+    background-color: brown;
+} */
+
+small {font-size: .6rem; margin-top: .4rem;}
+
+.nav-toggle {
+    position: absolute;
+    height: .1rem;
+    width: .5rem;
+    border: 1px solid rgba(161, 161, 161, 0.87);
+}
+.btn-div {margin-block: 3rem 0;}
+.downBtn {width: 1rem;}
+
+.sr-only {
+    display: none;
+}

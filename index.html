@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone UI</title>
+    <!-- <script src="https://kit.fontawesome.com/358bdfea77.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone" id="phone">
+        <div class="flex">
+            <button class="nav-toggle"><span class="sr-only">menu</span></button>
+        </div>
+
+            <div class="div" id="menu" data-visible="false">
+                <div class="top">
+                    <div>
+                        <!-- <span class="span">03:00</span> -->
+                    </div>
+                    <div style="margin-top: 1.5rem;" class="network-providers">
+                        <span class="span">
+                            <i class="fa-solid fa-signal"></i>
+                            glo ng
+                        </span>
+                        <span class="span">
+                            <i class="fa-solid fa-signal"></i>
+                            Airtel
+                        </span>
+                    </div>
+                </div>
+                <div class="slider">
+                    <!-- <i class="fa-solid fa-moon"></i> -->
+                    <input type="range" name="" id="range" min="10" max="100" value="100">
+                </div>
+                <div class="options grid">
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-solid fa-wifi"></i>
+                        </button>
+                        <small>Wifi</small> 
+                    </div>
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-solid fa-signal"></i>
+                        </button>
+                        <small>Mobile data</small> 
+                    </div>
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-solid fa-plane-up"></i>
+                        </button>
+                        <small>Airplane</small> 
+                    </div>
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-solid fa-moon"></i>
+                        </button>
+                        <small>Dark theme</small> 
+                    </div>
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                        <small>Location</small> 
+                    </div>   
+                    <div class="flex">
+                        <button class="button">
+                            <i class="fa-brands fa-bluetooth-b"></i>
+                        </button>
+                        <small>bluetooth</small> 
+                    </div>
+                </div>
+                <div class="flex btn-div">
+                    <button class="nav-toggle downBtn"><span class="sr-only">menu</span></button>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="left-nav">
+                    <span class="span">glo ng - Airtel</span>
+                </div>
+                <div class="right-nav">
+                    <!-- <span></span> -->
+                    <img src="./icon-ethereum.svg" alt="">
+                    <img src="./rengoku.jpg" style="border-radius: 100%; height: 15px;" alt="rengoku">
+                </div>
+            </div>
+    
+            <div class="time ">
+                
+                    <span class="hour-num"></span>
+                    <span>:</span>
+                    <span class="min-num"></span>
+                    <p>Tue, 18 Apr🌙27*C</p> 
+    
+            </div>
+            <div class="music-panel">
+                <!-- <audio controls src="./SANJI RAP _ _Bon Cuistot_ _ RUSTAGE ft. Muscape [ONE PIECE](MP3_160K).mp3"></audio> -->
+            </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
